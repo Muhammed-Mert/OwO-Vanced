@@ -7,7 +7,7 @@ plugins {
     signing
 }
 
-group = "app.revanced"
+group = "app.owovanced"
 
 repositories {
     mavenCentral()
@@ -35,14 +35,14 @@ kotlin {
 tasks {
     withType(Jar::class) {
         manifest {
-            attributes["Name"] = "ReVanced Patches template"
-            attributes["Description"] = "Patches template for ReVanced."
+            attributes["Name"] = "OwOVanced"
+            attributes["Description"] = "OwOVanced"
             attributes["Version"] = version
             attributes["Timestamp"] = System.currentTimeMillis().toString()
-            attributes["Source"] = "git@github.com:revanced/revanced-patches-template.git"
-            attributes["Author"] = "ReVanced"
-            attributes["Contact"] = "contact@revanced.app"
-            attributes["Origin"] = "https://revanced.app"
+            attributes["Source"] = "git@github.com:Muhammed-Mert/OwO-Vanced.git"
+            attributes["Author"] = "OwOVanced"
+            attributes["Contact"] = "oltivi1335@gmail.com"
+            attributes["Origin"] = "-"
             attributes["License"] = "GNU General Public License v3.0"
         }
     }
@@ -83,7 +83,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/revanced/revanced-patches-template")
+            url = uri("https://maven.pkg.github.com/Muhammed-Mert/OwO-Vanced")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
@@ -96,9 +96,9 @@ publishing {
             from(components["java"])
 
             pom {
-                name = "ReVanced Patches template"
-                description = "Patches template for ReVanced."
-                url = "https://revanced.app"
+                name = "OwOVanced"
+                description = "OwOVanced"
+                url = "-"
 
                 licenses {
                     license {
@@ -108,15 +108,15 @@ publishing {
                 }
                 developers {
                     developer {
-                        id = "ReVanced"
-                        name = "ReVanced"
-                        email = "contact@revanced.app"
+                        id = "OwOVanced"
+                        name = "OwOVanced"
+                        email = "oltivi1335@gmail.com"
                     }
                 }
                 scm {
-                    connection = "scm:git:git://github.com/revanced/revanced-patches-template.git"
-                    developerConnection = "scm:git:git@github.com:revanced/revanced-patches-template.git"
-                    url = "https://github.com/revanced/revanced-patches-template"
+                    connection = "scm:git:git://github.com/Muhammed-Mert/OwO-Vanced.git"
+                    developerConnection = "scm:git:git@github.com:Muhammed-Mert/OwO-Vanced.git"
+                    url = "https://github.com/Muhammed-Mert/OwO-Vanced"
                 }
             }
         }
