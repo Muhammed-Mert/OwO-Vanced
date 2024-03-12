@@ -5,7 +5,7 @@ binary-compatibility-validator = "0.14.0"
 kotlin = "1.9.22"
 
 [libraries]
-revanced-patcher = { module = "app.revanced:revanced-patcher", version.ref = "revanced-patcher" }
+revanced-patcher = { module = "app.revanced:owovanced-patcher", version.ref = "owovanced-patcher" }
 smali = { module = "com.android.tools.smali:smali", version.ref = "smali" }
 
 [plugins]
